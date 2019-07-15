@@ -1,16 +1,28 @@
-const assert = require("assert");
+const assert = require("assert"); //module being inserted! 
 
-// Feel free to look things up online!
 
 const tokenize = str => {
+  const split = str.split(" ") 
+return(split)
   // TODO - write a function which converts a multi-word string into an array of words
-};
+}; 
+console.log(tokenize("Hello world!"))
+
 
 const reverse = str => {
+  const stringSplit = str.split(""); 
+  const stringReverse = stringSplit.reverse(); 
+  const stringJoin = stringReverse.join("");
+  return stringJoin 
   // TODO - write a function which reverses the string
 };
+console.log(reverse("Hello world!"))
+
 
 const uniqueOnes = arr => {
+  const stringSplit = str.split(" ")
+
+  
   // TODO - write a function which returns the inputted array without duplicate elements
 };
 
@@ -30,8 +42,18 @@ const unzip = arr => {
 
 const shiftRight = (str, num) => {
   // TODO - write a function which shifts a string `num` characters to the right
-  // Example = shiftThree("Hello") === "lloHe"
+  // Example = shiftTRight("Hello, 2") === "lloHe"
+   arr = str.split ("") 
+   for (let i = 0; i < num; i++) {
+     const l = arr.shift() 
+     arr.push(l) 
+   }
+newStr = arr.join("") 
+return newSTr 
+
 };
+
+console.log(shiftRight("Hello, 2"))
 
 const announceDate = () => {
   // TODO - write a function which returns the current date in the following format:
@@ -41,6 +63,8 @@ const announceDate = () => {
 // Write tests here:
 
 assert(1 < 2);
-assert(1 + 2 === 3);
+assert(1 + 2 === 3); //=== means equal and the same data type 
 assert([2, 3][0] === 2);
+assert(reverse("3df")=== "fd3")
 // asssert (reverse("3df") === "fd3")
+// assert means "test" 
