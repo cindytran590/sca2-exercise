@@ -1,0 +1,19 @@
+body { 
+    background-color:palegoldenrod}
+
+h1 {
+    color: lightcoral
+    
+}
+
+p {
+    color: pink
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
